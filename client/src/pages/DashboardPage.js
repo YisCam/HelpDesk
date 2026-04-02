@@ -179,6 +179,7 @@ function ActivityFeed({ tickets }) {
 // ─── Main Dashboard ───────────────────────────────────────────────────────────
 export default function DashboardPage({ onNavigate }) {
   const { metrics, tickets, users } = useApp();
+  console.log(tickets);
   const [slaReport, setSlaReport] = useState(null);
 
   useEffect(() => {
